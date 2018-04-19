@@ -15,7 +15,7 @@ pipeline {
     }
     stage('devStage') {
       steps {
-        echo "Hello ${params.name}!"
+        echo "Hello ${params.Name}!"
         echo "${TEST_USER_USR}"
         echo "${TEST_USER_PSW}"
         echo 'hello'
@@ -27,6 +27,6 @@ pipeline {
     TEST_USER = credentials('giri')
   }
   parameters {
-    string(name: 'James Bond', defaultValue: 'whoever you are', description: 'Who should I say hi to?')
+    string(name: 'Name', defaultValue: 'whoever you are', description: 'Who should I say hi to?')
   }
 }
