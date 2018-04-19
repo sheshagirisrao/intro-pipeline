@@ -15,7 +15,7 @@ pipeline {
     }
     stage('devStage') {
       steps {
-        echo "Hello ${params.Name}!"
+        echo "Hello ${params.name}!"
         echo "${TEST_USER_USR}"
         echo "${TEST_USER_PSW}"
         echo 'hello'
