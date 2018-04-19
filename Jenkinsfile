@@ -11,7 +11,6 @@ pipeline {
       steps {
         sleep 5
         sh 'echo "Hello World"'
-        sh 'java -version'
         sh 'go version'
       }
     }
