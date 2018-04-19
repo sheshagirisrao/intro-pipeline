@@ -23,6 +23,6 @@ pipeline {
   }
   environment {
     MY_NAME = 'Giri'
-    TEST_USER = credentials('giri')
+    TEST_USER = credentials('test-user')
   }
 }
